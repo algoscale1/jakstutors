@@ -7,9 +7,9 @@ app = create_app()
 
 
 if __name__ == '__main__':
-    logger = logging.getLogger('digi_assistant')
+    logger = logging.getLogger('jakstutors')
     logger.debug('****debug mode****')
-    logger.info('digi_assistant scoring started')
+    logger.info('jakstutors scoring started')
 
     if app.debug:
         app.run(host="0.0.0.0", debug=True, port=8081, threaded=True)

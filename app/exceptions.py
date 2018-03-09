@@ -1,6 +1,6 @@
 import logging
 
-logger = logging.getLogger('data-services')
+logger = logging.getLogger('jakstutors')
 
 
 class DataNotFoundError(Exception):

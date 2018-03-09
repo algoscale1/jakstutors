@@ -1,6 +1,6 @@
 from flask import jsonify
 import logging
-logger = logging.getLogger('digi_assistant')
+logger = logging.getLogger('jakstutors')
 
 
 class InvalidUsage(Exception):

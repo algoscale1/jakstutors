@@ -1,7 +1,7 @@
 from flask import request, jsonify
 from . import routes
 from .exceptions import InvalidUsage, DataNotFound, ElasticsearchTimeout
-from app.exceptions import InvalidData, ElasticsearchService, DataNotFoundError
+from app.exceptions import InvalidData,  ElasticsearchService, DataNotFoundError
 import logging
 # from app.base import Base
 from jaks_model import process_n_get_text
