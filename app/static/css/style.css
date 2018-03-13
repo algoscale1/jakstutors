@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.wrapper {
+    background: url("../images/pexels-photo-29781.png") no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.logo img{
+    width: 137.5px;
+}
+
+.mt-150{
+    margin-top: 150px;
+}
+
+.heading {
+    color: white;
+    font-family: Raleway;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.heading strong {
+    color: rgb(51, 187, 255);
+}
+
+.file-selector {
+    position: relative;
+    width: 100%;
+}
+
+.upload-file {
+    cursor: pointer;
+    font-size: 20px;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.upload-file + input[type=file] {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+@media (max-width: 992px) {
+    .heading {
+        display: none;
+    }
+}
