@@ -12,6 +12,6 @@ if __name__ == '__main__':
     logger.info('jakstutors scoring started')
 
     if app.debug:
-        app.run(host="0.0.0.0", debug=True, port=8081, threaded=True)
+        app.run(host="0.0.0.0", debug=True, port=8080, threaded=True)
     else:
-        app.run(host="0.0.0.0", debug=False, port=8081, threaded=True)
+        app.run(host="0.0.0.0", debug=False, port=8080, threaded=True)

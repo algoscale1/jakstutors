@@ -50,6 +50,7 @@ def process_n_get_text():
     for the_file in os.listdir(folder):
         file_path = os.path.join(folder, the_file)
         ch.load_image(file_path, the_file, new_folder)
+        os.unlink(file_path)
     img_data = {}
     for the_file in os.listdir(new_folder):
         file_path = os.path.join(new_folder, the_file)
@@ -57,8 +58,8 @@ def process_n_get_text():
         question = clean(data)
         predicted = predict([question])
 
-        img_data.update({the_file:{"question":question,"subject": predicted}})
-        # os.unlink(file_path)
+        img_data.update({the_file:{"question":question,"subject": predicted.tolist()}})
+        os.unlink(file_path)
     return img_data
 
 
