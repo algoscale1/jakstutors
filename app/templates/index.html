@@ -9,29 +9,50 @@
           href='https://fonts.googleapis.com/css?family=Raleway%3A300%2C300italic%2C700%2C700italic%2C200%7CLato%3A700%2C400&#038;subset=latin%2Clatin-ext&#038;ver=5.2.5'
           media='all'/>
     <link rel="stylesheet" href="/static/css/style.css"/>
-    <link rel="icon" href="https://jakstutors.com/wp-content/uploads/2017/11/cropped-23415950_1648217011896185_132545581_n-32x32.png" sizes="32x32">
+    <link rel="icon"
+          href="https://jakstutors.com/wp-content/uploads/2017/11/cropped-23415950_1648217011896185_132545581_n-32x32.png"
+          sizes="32x32">
 </head>
 <body>
-<div class="wrapper">
-    <div class="container">
-        <a title="Calculus, Chemistry, and so much more!" class="logo" href="https://jakstutors.com/"><img
-                alt="Calculus, Chemistry, and so much more!"
-                src="/static/images/23415950_1648217011896185_132545581_n.png"></a>
-        <div class="mt-150">
-            <div class="row">
-                <div class="col-xs-12 text-center">
-                    <h1 class="heading">Welcome to <strong>JakStat Tutors</strong></h1>
+<div class="main">
+    <!--<div ui-view></div>-->
+    <div class="wrapper1">
+        <div class="container">
+            <div class="clearfix m-t-15">
+                <a title="Calculus, Chemistry, and so much more!" class="logo pull-left" href="https://jakstutors.com/"><img
+                        alt="Calculus, Chemistry, and so much more!"
+                        src="/static/images/23415950_1648217011896185_132545581_n.png"></a>
+                <a title="Sign In" class="sign-in pull-right m-15 text-uppercase" href="54.237.222.120:8080/login">
+                    sign in
+                </a>
+            </div>
+            <div class="m-tb-75">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h1 class="heading text-capitalize">try <strong>jakStat's</strong> image classifier</h1>
+                    </div>
+                    <div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3 m-t-10">
+                        <form class="file-selector" action="http://54.237.222.120:8080/classify" method="POST"
+                              enctype="multipart/form-data" target="_blank">
+                            <input title="Upload here" placeholder="Upload here" name="inputText"
+                                   class="form-control input-model p-20 f-s-18 p-r-40" type="text"/>
+                            <label title="Add File" class="upload-file" for="upload-file">
+                                <span class="glyphicon glyphicon-file"></span>
+                            </label>
+                            <input class="input-file" name="inputFile" type="file" id="upload-file"
+                                   accept="image/*">
+                        </form>
+                    </div>
                 </div>
-                <div class="col-xs-10 col-sm-8 col-md-6 col-xs-offset-1 col-sm-offset-2 col-md-offset-3 mt-10">
-                    <form class="file-selector" action="http://54.237.222.120:8080/classify" method="POST" enctype="multipart/form-data">
-                        <input title="Search" placeholder="Search Files" name="inputText" class="form-control input-model p-20 fs-18" type="text"/>
-                        <label title="Add File" class="upload-file" for="upload-file">
-                            <span class="glyphicon glyphicon-file"></span>
-                        </label>
-                        <input class="input-file" name="inputFile" type="file" id="upload-file"
-                               accept="image/*">
-                    </form>
-                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper2">
+        <div class="container">
+            <div class="text-center">
+                <button class="btn btn-primary btn-lg">
+                    DEMO
+                </button>
             </div>
         </div>
     </div>
