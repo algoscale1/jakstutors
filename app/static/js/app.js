@@ -1,7 +1,8 @@
 $('.input-file').change(function(e){
     $('.input-model').val(e.target.files[0].name);
+    console.log($('.input-model').val(e.target.files[0].name));
     $('.file-selector').submit();
-    $('.input-model').val('');
+   // $('.input-model').val('');
 });
 
 var status = false;
