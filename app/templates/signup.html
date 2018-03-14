@@ -13,86 +13,126 @@
           href="https://jakstutors.com/wp-content/uploads/2017/11/cropped-23415950_1648217011896185_132545581_n-32x32.png"
           sizes="32x32">
 </head>
-<body style="background-color: lightgrey;overflow-x: hidden;">
-<h1 class="text-center">Sign Up</h1>
-<div class="form-box">
-    <h2>Create Your Own Account</h2>
-    <form name="user">
-        <div class="row">
-            <div class="col-md-12">
-                <input tabindex="1" class="inp-txt-box" name="name" type="text"
-                       placeholder="User Name" required autofocus/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input tabindex="2" class="inp-txt-box" name="email"
-                       type="email" placeholder="Email Id" required/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input tabindex="3" class="inp-txt-box" name="password" type="password" placeholder="Password" required/>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input tabindex="4" class="inp-txt-box"
-                       name="cpassword" type="password"
-                       placeholder="Confirm Password" required/>
-            </div>
-        </div>
-        <div class="row m-tb-5">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-6 m-tb-5">
-                        Date Of Birth :
+<body>
+<div style="margin-top:150px" class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row package">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary package-btn">Free</button>
+                        <div class="package-list">
+                            <ul class="list-unstyled text-center">
+                                <li>First Item</li>
+                                <li>Second Item</li>
+                                <li>Third Item</li>
+                                <li>Forth Item</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="col-md-6">
-                        <input class="form-control" type="date" name="dob"/>
+                        <button type="button" class="btn btn-primary package-btn">Premium</button>
+                        <div class="package-list">
+                            <ul class="list-unstyled text-center">
+                                <li>First Item</li>
+                                <li>Second Item</li>
+                                <li>Third Item</li>
+                                <li>Forth Item</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 m-tb-5">
-                <div class="row">
-                    <div class="col-md-4">
-                        <label>Gender</label>
-                    </div>
-                    <div class="col-md-4">
-                        <label><input tabindex="5" name="gender"
-                                      type="radio"/> Male</label>
-                    </div>
-                    <div class="col-md-4">
-                        <label><input tabindex="6" name="gender"
-                                      type="radio"/> Female</label>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 text-right">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 terms-and-cond text-center">
-                <input tabindex="" name="termcheck" id="term" type="checkbox" required/>
-                <label for="term">I've Agreed To The <a href="#">Terms and Conditions.</a></label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <input tabindex="" class="btn inp-sub-box" name="submit" type="submit" value="Sign Up"/>
-            </div>
-        </div>
-    </form>
+    </div>
 </div>
-<div class="row text-center">
-    <div class="col-md-12">
-        <a tabindex="7" class="sign-up-box" href="http://54.237.222.120:8080/login">Existing User? <b>Log In</b></a>
+<div class="signup-box">
+    <h1 class="text-center">Sign Up</h1>
+    <div class="form-box">
+        <h2>Create Your Own Account</h2>
+        <form name="user">
+            <div class="row">
+                <div class="col-md-12">
+                    <input tabindex="1" class="inp-txt-box" name="name" type="text"
+                           placeholder="User Name" required autofocus/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input tabindex="2" class="inp-txt-box" name="email"
+                           type="email" placeholder="Email Id" required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input tabindex="3" class="inp-txt-box" name="password" type="password" placeholder="Password"
+                           required/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input tabindex="4" class="inp-txt-box"
+                           name="cpassword" type="password"
+                           placeholder="Confirm Password" required/>
+                </div>
+            </div>
+            <div class="row m-tb-5">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 m-tb-5">
+                            Date Of Birth :
+                        </div>
+                        <div class="col-md-6">
+                            <input class="form-control" type="date" name="dob"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 m-tb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>Gender</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label><input tabindex="5" name="gender"
+                                          type="radio"/> Male</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label><input tabindex="6" name="gender"
+                                          type="radio"/> Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-right">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 terms-and-cond text-center">
+                    <input tabindex="" name="termcheck" id="term" type="checkbox" required/>
+                    <label for="term">I've Agreed To The <a href="#">Terms and Conditions.</a></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input id="signin-form" tabindex="" class="btn inp-sub-box" name="submit" type="submit"
+                           value="Sign Up" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false"/>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-12">
+            <a tabindex="7" class="sign-up-box" href="http://localhost:8080/login">Existing User? <b>Log In</b></a>
+        </div>
     </div>
 </div>
 <script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+<!--<script src="/static/bower_components/jquery-validation/dist/jquery-validate.min.js"></script>-->
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
 <script src="/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/static/bower_components/angular/angular.min.js"></script>
+<script src="/static/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="/static/js/app.js"></script>
 </body>
 </html>

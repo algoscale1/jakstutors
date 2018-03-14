@@ -188,3 +188,18 @@ input.ng-valid.ng-dirty {
 .log-in-box:hover {
     color: white;
 }
+
+.login-box,
+.signup-box {
+    background-color: lightgrey;
+    overflow-x: hidden;
+    height: 100vh
+}
+
+.package-btn {
+    width: 100%;
+}
+
+.package-list {
+    margin-top: 10px;
+}

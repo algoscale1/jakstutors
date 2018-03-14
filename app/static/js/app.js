@@ -4,21 +4,32 @@ $('.input-file').change(function(e){
     $('.input-model').val('');
 });
 
+var status = false;
+
+$('#myModal').blur(function(e){
+    e.preventDefault()
+})
+
 //var myApp = angular.module('myApp',['ui.router']);
-
+//
 //myApp.controller('baseController',['$scope',function($scope){
-
+//    $scope.title = "testing";
 //}]);
-
-//myApp.config(function($stateProvider, $urlRouterProvider) {
-//    $urlRouterProvider.otherwise('/home');
+//
+//myApp.config(function($stateProvider, $urlRouterProvider,$locationProvider) {
+//    $locationProvider.html5Mode(true);
+//    $urlRouterProvider.otherwise('/index');
 //    $stateProvider
-//        .state('home',{
-//            url : '/home',
-//            templateUrl : '/templates/components/home.html'
+//        .state('index',{
+//            url : '/index',
+//            templateUrl : '/templates/home.html'
 //        })
-//        .state('signIn',{
-//            url : '/signIn',
-//            templateUrl : '/templates/components/signIn.html'
+//        .state('login',{
+//            url : '/login',
+//            templateUrl : '/templates/login.html'
+//        })
+//        .state('signup',{
+//            url : '/signup',
+//            templateUrl : '/templates/signup.html'
 //        })
 //});

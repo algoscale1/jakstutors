@@ -18,6 +18,7 @@
     "jquery": "^3.3.1",
     "bootstrap": "3",
     "angular": "^1.6.9",
-    "angular-ui-router": "^1.0.15"
+    "angular-ui-router": "^1.0.15",
+    "jquery-validation": "^1.17.0"
   }
 }
